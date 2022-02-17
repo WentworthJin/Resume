@@ -1,0 +1,30 @@
+:root{
+  --article-background-color: #051622;
+  --article-icon-width: 10rem;
+  --article-width: 50%;
+
+  --heading-color:#1BA098;
+  --text-color: #DEB992;
+
+  --heading-font-family: seri;
+
+  --heading-font-size: 10rem;
+}
+
+h1:before {
+	content: "0"counter(heading)" ";
+	counter-increment: heading;
+}
+
+h1 {
+	counter-reset: subheading;
+}
+
+
+.first-h1{
+  color: var(--heading-color);
+}
+
+.article-main{
+  background-color: var(--article-background-color);
+}
