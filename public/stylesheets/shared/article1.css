@@ -285,6 +285,21 @@ h1 {
   content: '85%';
 }
 
+.soft-skill6{
+  width: 85%;
+}
+
+.soft-skill6:before{
+  content: 'Teamwork';
+  display: inline;
+  position:relative;
+  color: var(--heading-color);
+}
+
+.soft-skill6::after{
+  content: '85%';
+}
+
 @media only screen and (max-width: 600px){
   .first-h1{
     font-size: calc(var(--first-h1-font-size) / 2);
@@ -300,7 +315,7 @@ h1 {
 
   .profession-flex{
     margin-top: calc(var(--profession-flex-margin-top) / 1.5);
-    margin-left: 20%;
+    margin-left: 17%;
   }
 
   .profession-flex > div::before{
