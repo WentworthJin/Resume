@@ -315,7 +315,7 @@ h1 {
 
   .profession-flex{
     margin-top: calc(var(--profession-flex-margin-top) / 1.5);
-    margin-left: 17%;
+    margin-left: 3.5%;
   }
 
   .profession-flex > div::before{
