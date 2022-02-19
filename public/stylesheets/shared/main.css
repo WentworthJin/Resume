@@ -4,6 +4,7 @@
   --main-background-image-size: 50rem;
   --main-background-color:#6E6E6E;
   --main-padding-bottom:20rem;
+  --main-padding-top: 4rem;
   --fullstop-font-size: 6rem;
   --seconday-text-font-size: 3rem;
 
@@ -21,6 +22,7 @@
 
   --quote-color: #fff;
   --fullstop-color: #fff;
+  --secondary-color: #fff;
 
   --second-margin-left: 40%;
   --second-margin-top: 4rem;
@@ -44,6 +46,7 @@
   padding-bottom: var(--main-padding-bottom);
   background-color:var(--main-background-color);
   position:relative;
+  padding-top: var(--main-padding-top);
 }
 
 .main-wrapper{
@@ -80,6 +83,7 @@
   flex: 1;
   gap: var(--secondary-flex-gap);
   opacity: 1;
+  color: var(--secondary-color);
 }
 
 .second-wrapper span{

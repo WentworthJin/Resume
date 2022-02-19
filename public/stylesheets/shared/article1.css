@@ -4,11 +4,30 @@
   --article-width: 50%;
 
   --heading-color:#1BA098;
-  --text-color: #DEB992;
+  --bar-color: #DEB992;
 
-  --heading-font-family: seri;
-
+  --heading-font-family: "Bebas Neue", sans-serif;
   --heading-font-size: 10rem;
+
+  --profession-flex-margin-left: 26%;
+  --profession-flex-margin-top: 7rem;
+  --profession-flex-gap: 3rem;
+  --first-h1-padding-top: 4rem;
+  --second-h2-margin-top: 6rem;
+
+  --first-h1-font-size: 7rem;
+  --first-h1-letter-spacing: 1rem;
+
+  --first-h2-font-size: 3rem;
+  --h2-letter-spacing: 0.5rem;
+  --second-h2-font-size: 3rem;
+
+  --skill-bar-name-left-position: -15rem;
+  --skill-bar-name-font-size: 1.5rem;
+  --skill-bar-mobile-bottom: 2.2rem;
+
+  --skill-bar-percentage-top: -1.7rem;
+  --skill-bar-percentage-left: 5.2rem;
 }
 
 h1:before {
@@ -23,8 +42,269 @@ h1 {
 
 .first-h1{
   color: var(--heading-color);
+  padding-top: var(--first-h1-padding-top);
+  font-family: var(--heading-font-family);
+  font-size: var(--first-h1-font-size);
+  letter-spacing: var(--first-h1-letter-spacing);
+  text-align: center;
+}
+
+.first-h2{
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+  font-size: var(--first-h2-font-size);
+  text-align: center;
+  white-space: pre;
+  letter-spacing: var(--h2-letter-spacing);
+}
+
+.second-h2{
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+  font-size: var(--second-h2-font-size);
+  text-align: center;
+  white-space: pre;
+  margin-top: var(--second-h2-margin-top);
+  letter-spacing: var(--h2-letter-spacing);
 }
 
 .article-main{
   background-color: var(--article-background-color);
+}
+
+.profession-flex{
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+  margin-left: var(--profession-flex-margin-left);
+  margin-top: var(--profession-flex-margin-top);
+  gap: var(--profession-flex-gap);
+}
+
+.profession-flex > div{
+  height: 2rem;
+  background-color: var(--bar-color);
+}
+
+.profession-flex > div::before{
+  left: var(--skill-bar-name-left-position);
+  font-size: var(--skill-bar-name-font-size);
+}
+
+.profession-flex > div::after{
+  font-size: var(--skill-bar-name-font-size);
+  text-align: right;
+  display: block;
+  position: relative;
+  color: var(--heading-color);
+  top: var(--skill-bar-percentage-top);
+  left: var(--skill-bar-percentage-left);
+}
+
+/*  Programming Skill Section */
+
+.skill1{
+  width: 65%;
+}
+
+.skill1:before{
+  content: 'HTML';
+  display: inline;
+  position:relative;
+  color: var(--heading-color);
+}
+
+.skill1::after{
+  content: '65%';
+}
+
+.skill2{
+  width: 60%;
+}
+
+.skill2:before{
+  content: 'CSS';
+  display: inline;
+  position:relative;
+  color: var(--heading-color);
+}
+
+.skill2::after{
+  content: '60%';
+}
+
+.skill3{
+  width: 65%;
+}
+
+.skill3:before{
+  content: 'JAVASCRIPT';
+  display: inline;
+  position:relative;
+  color: var(--heading-color);
+}
+
+.skill3::after{
+  content: '65%';
+}
+
+.skill4{
+  width: 50%;
+}
+
+.skill4:before{
+  content: 'NodeJS';
+  display: inline;
+  position:relative;
+  color: var(--heading-color);
+}
+
+.skill4::after{
+  content: '50%';
+}
+
+.skill5{
+  width: 65%;
+}
+
+.skill5:before{
+  content: 'Python';
+  display: inline;
+  position:relative;
+  color: var(--heading-color);
+}
+
+.skill5::after{
+  content: '65%';
+}
+
+.skill6{
+  width: 75%;
+}
+
+.skill6:before{
+  content: 'SQL';
+  display: inline;
+  position:relative;
+  color: var(--heading-color);
+}
+
+.skill6::after{
+  content: '75%';
+}
+
+.skill7{
+  width: 50%;
+}
+
+.skill7:before{
+  content: 'MongoDB';
+  display: inline;
+  position:relative;
+  color: var(--heading-color);
+}
+
+.skill7::after{
+  content: '50%';
+}
+
+/* Soft Skill section */
+
+.soft-skill1{
+  width: 80%;
+}
+
+.soft-skill1:before{
+  content: 'Microsoft Office';
+  display: inline;
+  position:relative;
+  color: var(--heading-color);
+}
+
+.soft-skill1::after{
+  content: '80%';
+}
+
+.soft-skill2{
+  width: 75%;
+}
+
+.soft-skill2:before{
+  content: 'English Speaking';
+  display: inline;
+  position:relative;
+  color: var(--heading-color);
+}
+
+.soft-skill2::after{
+  content: '75%';
+}
+
+.soft-skill3{
+  width: 75%;
+}
+
+.soft-skill3:before{
+  content: 'English Writing';
+  display: inline;
+  position:relative;
+  color: var(--heading-color);
+}
+
+.soft-skill3::after{
+  content: '75%';
+}
+
+.soft-skill4{
+  width: 65%;
+}
+
+.soft-skill4:before{
+  content: 'Linux';
+  display: inline;
+  position:relative;
+  color: var(--heading-color);
+}
+
+.soft-skill4::after{
+  content: '65%';
+}
+
+.soft-skill5{
+  width: 85%;
+}
+
+.soft-skill5:before{
+  content: 'MacOS / Windows';
+  display: inline;
+  position:relative;
+  color: var(--heading-color);
+}
+
+.soft-skill5::after{
+  content: '85%';
+}
+
+@media only screen and (max-width: 600px){
+  .first-h1{
+    font-size: calc(var(--first-h1-font-size) / 2);
+  }
+
+  .first-h2{
+    font-size: calc(var(--first-h2-font-size) / 1.5);
+  }
+
+  .second-h2{
+    font-size: calc(var(--second-h2-font-size) / 1.5);
+  }
+
+  .profession-flex{
+    margin-top: calc(var(--profession-flex-margin-top) / 1.5);
+    margin-left: 20%;
+  }
+
+  .profession-flex > div::before{
+    left:0;
+    bottom: var(--skill-bar-mobile-bottom);
+  }
 }

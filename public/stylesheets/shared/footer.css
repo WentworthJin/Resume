@@ -1,0 +1,11 @@
+:root{
+  --main-font-family: "Barlow Condensed", sans-serif;
+  --main-color: #fff;
+}
+
+.footer-text{
+  font-family: var(--main-font-family);
+  text-align: center;
+  color: var(--main-color);
+  font-weight: bold;
+}
