@@ -1,0 +1,139 @@
+:root{
+  --contact-section-font-family: "Barlow Condensed", sans-serif;
+
+  --contact-text-color: #fff;
+  --link-color: #FBC403;
+
+  --contact-border-radius: 2rem;
+  --contact-border-width: 0.5rem;
+  --contact-width: 70%;
+
+  --contact-padding: 5rem;
+  --contact-wrapper-bottom: 11rem;
+
+  --contact-font-size: 1.7rem;
+
+  --icon-right: 1.5rem;
+  --icon-size: 1.5rem;
+}
+
+.contact-wrapper{
+  font: 1;
+  margin: auto;
+  border-radius: var(--contact-border-radius);
+  width: var(--contact-width);
+  padding: var(--contact-padding);
+  position: relative;
+  bottom: var(--contact-wrapper-bottom);
+  background-color: #000000;
+  opacity: 0.8;
+}
+
+.contact-flex{
+  display: flex;
+  flex:1;
+  justify-content: space-evenly;
+}
+
+.detail-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact-text{
+  font-family: var(--contact-section-font-family);
+  color: var(--contact-text-color);
+  font-size: var(--contact-font-size);
+  opacity: 1;
+  align-self: center;
+  justify-self: center;
+}
+
+.detail-icon{
+  font-family: var(--contact-section-font-family);
+  color: var(--contact-text-color);
+  font-size: var(--contact-font-size);
+  opacity: 1;
+  align-self: flex-end;
+  font-weight: bold;
+}
+.detail-flex >p >a{
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+.detail-flex >p >a:hover{
+  opacity: 0.5;
+}
+.detail-flex > p::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size:var(--icon-size);
+  position: relative;
+  right: var(--icon-right);
+}
+
+.contact-name::before{
+  font: var(--fa-font-solid);
+  content: '\f007';
+}
+
+.contact-tel::before{
+  font: var(--fa-font-solid);
+  content: '\f3cd';
+}
+
+.contact-email::before{
+  font: var(--fa-font-solid);
+  content: '\f0e0';
+}
+
+.contact-linkedin::before{
+  content: "\f08c"; 
+  font: var(--fa-font-brands);
+}
+
+.contact-github::before{
+  content: '\f09b';
+  font: var(--fa-font-brands);
+}
+
+
+@media only screen and (max-width: 600px){
+  .contact-wrapper{
+    width: 100%;
+    bottom: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .contact-flex{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .detail-flex{
+    align-items: flex-start;
+    justify-self: flex-start;
+    margin: auto;
+  }
+
+  .contact-text{
+    font-size: calc(var(--contact-font-size) * 1.1);
+    padding-top:5rem;
+  }
+
+  .detail-icon{
+    font-size: calc(var(--contact-font-size) * 1.1);
+    padding-bottom: 5rem;
+  }
+
+  .detail-flex > p::before{
+    right:0.3rem;
+  }
+}

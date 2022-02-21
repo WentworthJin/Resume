@@ -2,6 +2,7 @@
   --article-background-color: #051622;
   --article-icon-width: 10rem;
   --article-width: 50%;
+  --article-padding-bottom: 15rem;
 
   --heading-color:#1BA098;
   --bar-color: #DEB992;
@@ -70,6 +71,7 @@ h1 {
 
 .article-main{
   background-color: var(--article-background-color);
+  padding-bottom: var(--article-padding-bottom);
 }
 
 .profession-flex{
@@ -104,7 +106,7 @@ h1 {
 /*  Programming Skill Section */
 
 .skill1{
-  width: 65%;
+  width: 75%;
 }
 
 .skill1:before{
@@ -115,11 +117,11 @@ h1 {
 }
 
 .skill1::after{
-  content: '65%';
+  content: '85%';
 }
 
 .skill2{
-  width: 60%;
+  width: 70%;
 }
 
 .skill2:before{
@@ -130,7 +132,7 @@ h1 {
 }
 
 .skill2::after{
-  content: '60%';
+  content: '80%';
 }
 
 .skill3{
@@ -145,11 +147,11 @@ h1 {
 }
 
 .skill3::after{
-  content: '65%';
+  content: '75%';
 }
 
 .skill4{
-  width: 50%;
+  width: 76%;
 }
 
 .skill4:before{
@@ -160,11 +162,11 @@ h1 {
 }
 
 .skill4::after{
-  content: '50%';
+  content: '75%';
 }
 
 .skill5{
-  width: 65%;
+  width: 70%;
 }
 
 .skill5:before{
@@ -175,7 +177,7 @@ h1 {
 }
 
 .skill5::after{
-  content: '65%';
+  content: '80%';
 }
 
 .skill6{
@@ -190,11 +192,11 @@ h1 {
 }
 
 .skill6::after{
-  content: '75%';
+  content: '85%';
 }
 
 .skill7{
-  width: 50%;
+  width: 65%;
 }
 
 .skill7:before{
@@ -205,13 +207,13 @@ h1 {
 }
 
 .skill7::after{
-  content: '50%';
+  content: '75%';
 }
 
 /* Soft Skill section */
 
 .soft-skill1{
-  width: 80%;
+  width: 75%;
 }
 
 .soft-skill1:before{
@@ -222,11 +224,11 @@ h1 {
 }
 
 .soft-skill1::after{
-  content: '80%';
+  content: '85%';
 }
 
 .soft-skill2{
-  width: 75%;
+  width: 65%;
 }
 
 .soft-skill2:before{
@@ -241,7 +243,7 @@ h1 {
 }
 
 .soft-skill3{
-  width: 75%;
+  width: 70%;
 }
 
 .soft-skill3:before{
@@ -252,7 +254,7 @@ h1 {
 }
 
 .soft-skill3::after{
-  content: '75%';
+  content: '80%';
 }
 
 .soft-skill4{
@@ -267,11 +269,11 @@ h1 {
 }
 
 .soft-skill4::after{
-  content: '65%';
+  content: '80%';
 }
 
 .soft-skill5{
-  width: 85%;
+  width: 80%;
 }
 
 .soft-skill5:before{
@@ -282,11 +284,11 @@ h1 {
 }
 
 .soft-skill5::after{
-  content: '85%';
+  content: '90%';
 }
 
 .soft-skill6{
-  width: 85%;
+  width: 80%;
 }
 
 .soft-skill6:before{
@@ -297,10 +299,15 @@ h1 {
 }
 
 .soft-skill6::after{
-  content: '85%';
+  content: '90%';
 }
 
 @media only screen and (max-width: 600px){
+
+  .article-main{
+    padding-bottom: 0;
+  }
+
   .first-h1{
     font-size: calc(var(--first-h1-font-size) / 2);
   }

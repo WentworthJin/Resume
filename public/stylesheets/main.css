@@ -2,6 +2,8 @@
 @import 'shared/main.css';
 @import 'shared/footer.css';
 @import 'shared/article1.css';
+@import 'shared/contact.css';
+@import url("https://use.fontawesome.com/releases/v6.0.0/css/all.css");
 
 :root {
   --ritt:1px;

@@ -28,6 +28,7 @@
   --second-margin-top: 4rem;
 
   --main-button-background-color: #BCFD4C;
+  --main-button-border-radius: 1.5rem;
   --main-button-bottom: 10rem;
   --main-button-font-size: 2.5rem;
   --main-button-margin-top: 4rem;
@@ -100,6 +101,7 @@
 
 .main-button button{
   border: 2px solid #fff;
+  border-radius: var(--main-button-border-radius);
   background-color:var(--main-button-background-color);
   font-size: var(--main-button-font-size);
   padding: 1rem 3rem 1rem 3rem;
