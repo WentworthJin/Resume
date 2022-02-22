@@ -31,15 +31,6 @@
   --skill-bar-percentage-left: 5.2rem;
 }
 
-h1:before {
-	content: "0"counter(heading)" ";
-	counter-increment: heading;
-}
-
-h1 {
-	counter-reset: subheading;
-}
-
 
 .first-h1{
   color: var(--heading-color);
@@ -136,7 +127,7 @@ h1 {
 }
 
 .skill3{
-  width: 65%;
+  width: 70%;
 }
 
 .skill3:before{
@@ -147,11 +138,11 @@ h1 {
 }
 
 .skill3::after{
-  content: '75%';
+  content: '80%';
 }
 
 .skill4{
-  width: 76%;
+  width: 70%;
 }
 
 .skill4:before{
@@ -162,11 +153,11 @@ h1 {
 }
 
 .skill4::after{
-  content: '75%';
+  content: '80%';
 }
 
 .skill5{
-  width: 70%;
+  width: 75%;
 }
 
 .skill5:before{
@@ -177,7 +168,7 @@ h1 {
 }
 
 .skill5::after{
-  content: '80%';
+  content: '85%';
 }
 
 .skill6{
@@ -196,7 +187,7 @@ h1 {
 }
 
 .skill7{
-  width: 65%;
+  width: 70%;
 }
 
 .skill7:before{
@@ -207,7 +198,7 @@ h1 {
 }
 
 .skill7::after{
-  content: '75%';
+  content: '80%';
 }
 
 /* Soft Skill section */
@@ -228,7 +219,7 @@ h1 {
 }
 
 .soft-skill2{
-  width: 65%;
+  width: 70%;
 }
 
 .soft-skill2:before{
@@ -239,7 +230,7 @@ h1 {
 }
 
 .soft-skill2::after{
-  content: '75%';
+  content: '80%';
 }
 
 .soft-skill3{
@@ -258,7 +249,7 @@ h1 {
 }
 
 .soft-skill4{
-  width: 65%;
+  width: 70%;
 }
 
 .soft-skill4:before{
@@ -302,7 +293,7 @@ h1 {
   content: '90%';
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
 
   .article-main{
     padding-bottom: 0;
