@@ -25,8 +25,7 @@
   padding: var(--contact-padding);
   position: relative;
   bottom: var(--contact-wrapper-bottom);
-  background-color: #000000;
-  opacity: 0.8;
+  background-color: rgba(0,0,0,0.6);
 }
 
 .contact-flex{
@@ -60,6 +59,7 @@
   align-self: flex-end;
   font-weight: bold;
 }
+
 .detail-flex >p >a{
   text-decoration: underline;
   color: var(--link-color);

@@ -1,0 +1,194 @@
+:root{
+  --title-background-color: rgba(0,0,0,0.5);
+  --project-background-color: rgba(107, 104, 104, 0.5);
+  --project-wrapper-padding: 5rem;
+  --project-wrapper-radius: 0.1rem;
+  --title-border-radius: 1.5rem;
+  --title-wrapper-padding: 5rem;
+  --main-font-family: "Bebas Neue", sans-serif;
+
+  --main-flex-gap: 1rem;
+
+  --title-margin-top: 10rem;
+  --title-font-size: 7rem;
+  --title-color: #1BA098;
+  --title-letter-spacing: 1rem;
+
+  --project-margin-top: 8rem;
+
+  --project-image-width: 40rem;
+
+  --description-font-size: 3rem;
+  --description-color: #FBC403;
+  --description-letter-spacing: 0.5rem;
+  --description-margin-bottom: 1rem;
+  --description-margin-top: 5rem;
+
+  --text-font-size: 2rem;
+  --text-font-family: "Barlow Condensed", sans-serif;
+  --text-line-height: 3rem;
+
+  --icon-right: 1rem;
+}
+
+.title-wrapper{
+  width: 70%;
+  margin: auto;
+  counter-reset: heading 2;
+  margin-top: var(--title-margin-top);
+  background-color: var(--title-background-color);
+  border-radius: var(--title-border-radius);
+  padding: var(--title-wrapper-padding);
+}
+
+.title-wrapper h1{
+  font-family: var(--main-font-family);
+  font-size: var(--title-font-size);
+  color: var(--title-color);
+  letter-spacing: var(--title-letter-spacing);
+  text-align: center;
+}
+
+
+.title-wrapper h1::before{
+  content: "0"counter(heading)" ";
+	counter-increment: heading;
+}
+
+.project-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: var(--project-margin-top) auto;
+  text-align: center;
+}
+
+.project-background{
+  background-color: var(--project-background-color);
+  width: 100%;
+  padding: var(--project-wrapper-padding) 0;
+  border-radius: var(--project-wrapper-radius);
+  margin-top: var(--project-margin-top);
+}
+
+.description-h2{
+  font-size: var(--description-font-size);
+  font-family: var(--main-font-family);
+  color: var(--description-color);
+  letter-spacing: var(--description-letter-spacing);
+  margin-bottom: var(--description-margin-bottom);
+  margin-top: var(--description-margin-top);
+  font-weight: bold;
+}
+
+.description-icon{
+  font-size: var(--text-font-size);
+  display: inline;
+}
+
+.project-wrapper div>p{
+  font-size: var(--text-font-size);
+  font-family: var(--text-font-family);
+  color: #fff;
+  line-height: var(--text-line-height);
+  position: relative;
+}
+
+.github-icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size:var(--text-font-size);
+  position: relative;
+  right: var(--icon-right);
+  content: '\f09b';
+  font: var(--fa-font-brands);
+}
+
+.my-role::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size:var(--text-font-size);
+  position: relative;
+  right: var(--icon-right);
+  content: '\f0ae';
+  font: var(--fa-font-solid);
+}
+
+.used-technology::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size:var(--text-font-size);
+  position: relative;
+  right: var(--icon-right);
+  content: '\f121';
+  font: var(--fa-font-solid);
+}
+
+a{
+  text-decoration: underline;
+  color: var(--description-color);
+}
+
+hr{
+  width: 100%;
+  border-top: 1rem solid var(--description-color);
+}
+
+a:hover{
+  opacity: 0.5;
+}
+
+.project-wrapper > div {
+  text-align: center;
+  flex: 1 1 50%;
+}
+
+.project-wrapper img{
+  width: var(--project-image-width);
+  height: auto;
+}
+
+.project-gap{
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 768px){
+  .title-wrapper h1{
+    font-size: calc(var(--title-font-size) / 2);
+  }
+
+  .title-wrapper{
+    padding: calc(var(--title-wrapper-padding) / 1.5);
+  }
+
+  .project-background{
+    padding: calc(var(--project-wrapper-padding) / 1.5) 0;
+  }
+
+  .project-wrapper img{
+    width: calc(var(--project-image-width) / 1.5);
+    height: auto;
+  }
+
+  .description-h2{
+    font-size: calc(var(--description-font-size) / 1.5);
+  }
+
+  .project-wrapper div>p {
+    font-size: calc(var(--text-font-size) / 1.5);  
+  }
+
+  .project-wrapper > div{
+    flex: 0 1 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 330px){
+  .project-wrapper > div{
+    text-align: start;
+  }
+}
