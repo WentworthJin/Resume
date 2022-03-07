@@ -27,8 +27,9 @@
   --text-font-size: 2rem;
   --text-font-family: "Barlow Condensed", sans-serif;
   --text-line-height: 3rem;
+  --text-margin-bottom: 2.5rem;
 
-  --icon-right: 1rem;
+  --icon-right: 0.2rem;
 }
 
 .title-wrapper{
@@ -79,6 +80,9 @@
   margin-bottom: var(--description-margin-bottom);
   margin-top: var(--description-margin-top);
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .description-icon{
@@ -92,9 +96,23 @@
   color: #fff;
   line-height: var(--text-line-height);
   position: relative;
+  margin-bottom: var(--text-margin-bottom);
 }
 
-.github-icon::before {
+.project-wrapper div:nth-of-type(even) > p{
+  text-align: left;
+}
+
+.project-wrapper div:nth-of-type(odd) > p{
+  text-align: right;
+}
+
+.project-wrapper div p > span{
+  color: var(--description-color);
+  font-weight: bold;
+}
+
+/* .github-icon::before {
   display: inline-block;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -125,7 +143,7 @@
   right: var(--icon-right);
   content: '\f121';
   font: var(--fa-font-solid);
-}
+} */
 
 a{
   text-decoration: underline;
@@ -144,6 +162,14 @@ a:hover{
 .project-wrapper > div {
   text-align: center;
   flex: 1 1 50%;
+}
+
+.project-wrapper div:nth-of-type(even) > p{
+  text-align: left;
+}
+
+.project-wrapper div:nth-of-type(odd) > p{
+  text-align: left;
 }
 
 .project-wrapper img{
@@ -179,6 +205,15 @@ a:hover{
 
   .project-wrapper div>p {
     font-size: calc(var(--text-font-size) / 1.5);  
+    margin-bottom: 1rem;
+  }
+
+  .project-wrapper div:nth-of-type(even) > p{
+    text-align: left;
+  }
+  
+  .project-wrapper div:nth-of-type(odd) > p{
+    text-align: left;
   }
 
   .project-wrapper > div{

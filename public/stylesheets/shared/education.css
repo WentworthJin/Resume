@@ -25,6 +25,7 @@
   --timeline-max-width: 80rem;
 
   --timeline-ul-padding: 2rem;
+  --timeline-large-screen-padding-left: 4rem;
   --timeline-ul-border-radius: 1rem;
   --timeline-ul-margin-bottom: 2rem;
 
@@ -91,6 +92,7 @@
 
 .timeline ul {
   list-style: none;
+  padding-left: 0;
 }
 
 .timeline ul li {
@@ -159,10 +161,15 @@
     border-radius: var(--middle-line-border-radius);
   }
 
+  .timeline ul{
+    padding-left: var(--timeline-large-screen-padding-left);
+  }
+
   .timeline ul li {
     width: 50%;
     position: relative;
     margin-bottom: calc(var(--timeline-ul-margin-bottom) * 2.5);
+    padding: var(--timeline-ul-padding);
   }
 
   .timeline ul li:nth-child(odd) {
