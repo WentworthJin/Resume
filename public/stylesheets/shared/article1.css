@@ -20,6 +20,7 @@
   --first-h1-letter-spacing: 1rem;
 
   --first-h2-font-size: 3rem;
+  --first-h2-margin-bottom: 15rem;
   --h2-letter-spacing: 0.5rem;
   --second-h2-font-size: 3rem;
 
@@ -48,6 +49,7 @@
   text-align: center;
   white-space: pre;
   letter-spacing: var(--h2-letter-spacing);
+  margin-bottom: var(--first-h2-margin-bottom);
 }
 
 .second-h2{
@@ -300,11 +302,12 @@
   }
 
   .first-h1{
-    font-size: calc(var(--first-h1-font-size) / 2);
+    font-size: calc(var(--first-h1-font-size) / 1.5);
   }
 
   .first-h2{
     font-size: calc(var(--first-h2-font-size) / 1.5);
+    margin-bottom: calc(var(--first-h2-margin-bottom) / 2);
   }
 
   .second-h2{

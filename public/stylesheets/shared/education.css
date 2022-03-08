@@ -8,7 +8,7 @@
   --date-color: #FBC403;
   --gpa-color: #228B22;
 
-  --timeline-wrapper-margin-top: 5rem;
+  --timeline-wrapper-margin-top: 10rem;
 
   --second-h1-padding-top: 10rem;
 
@@ -18,8 +18,8 @@
   --first-h2-font-size: 3rem;
   --h2-letter-spacing: 0.5rem;
 
-  --container-flex-min-height: 100vh;
-  --container-flex-top-padding: 1rem;
+  --container-flex-min-height: 80vh;
+  --container-flex-top-padding: 0;
   --container-flex-right-padding: 0;
 
   --timeline-max-width: 80rem;
@@ -59,17 +59,18 @@
   color: var(--heading-color);
   font-family: var(--heading-font-family);
   letter-spacing: var(--second-h1-letter-spacing);
-  font-size: calc(var(--second-h1-font-size) / 2);
+  font-size: calc(var(--second-h1-font-size) / 1.4);
   text-align: center;
 }
 
 .first-h2{
   color: var(--heading-color);
   font-family: var(--heading-font-family);
-  font-size: calc(var(--first-h2-font-size) / 1.5);
+  font-size: calc(var(--first-h2-font-size) / 1.4);
   text-align: center;
   white-space: pre;
   letter-spacing: var(--h2-letter-spacing);
+  margin-bottom: 0;
 }
 
 .container {
@@ -135,7 +136,7 @@
 
 @media only screen and (min-width: 768px){
   .container{
-    padding: calc(var(--container-flex-top-padding) * 5) var(--container-flex-right-padding);
+    padding: calc(var(--container-flex-top-padding) * 0.5) var(--container-flex-right-padding);
   }
   .timeline-wrapper{
     margin-top: calc(var(--timeline-wrapper-margin-top) / 1);
